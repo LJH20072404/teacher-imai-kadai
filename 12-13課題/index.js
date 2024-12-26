@@ -3,14 +3,17 @@
 {/*ローカルスコープ*/
 
 // DOM取得
-const tabMenus = document.querySelectorAll('.tab__menu-item');
+const tabMenus = document.querySelectorAll('#js-tab__menu-item');
 console.log(tabMenus);
 
 // イベント付加
 tabMenus.forEach((tabMenu) => {
     tabMenu.addEventListener('click', tabSwitch);
 })
-
+//tabMenus.addEventListener("click", function() =>{
+    this.classList.toggle("tabSwitch");
+});
+    
 //イベントの処理
 function tabSwitch(e) {
 
@@ -19,13 +22,13 @@ function tabSwitch(e) {
 
     //
     const tabList = e.currentTarget.closest('.tab__menu');
-    console.log(tabList);
-    const tabItems = tabList.querySelectorAll('.tab__menu-item');
-    console.log(tabItems);
+    //console.log(tabList);
+    const tabItems = tabList.querySelectorAll('#js-tab__menu-item');
+    //console.log(tabItems);
 
     const tabPanelItems = tabList.
-    nextElementSibling.querySelectorAll('.tab__panel-box');
-    console.log(tabPanelItems);
+    nextElementSibling.querySelectorAll('#js-tab__panel-box');
+    //console.log(tabPanelItems);
 
     //
     tabItems.forEach((tabItem) => {
