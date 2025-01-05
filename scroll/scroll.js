@@ -1,12 +1,19 @@
-const backBtn = document.getElementById('back-btn');
+const backBtn = document.querySelector('#js-back-btn');
 
-window.addEventListener('scroll', () => {
-    const scrollValue = document.scrollingElement.scrollTop;
+backBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 
-    if (scrollValue >= 300) {
+window.addEventListener('scroll', () =>{
+
+    if (window.scrollY >= 300){
         backBtn.style.display = 'inline';
     }
     else {
-        backBtn.style.display = 'none';
+        backBtn.style.display ='none';
     }
 });
+
