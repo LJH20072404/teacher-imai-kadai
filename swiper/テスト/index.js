@@ -24,3 +24,17 @@ const swiper = new Swiper(".mySwiper1", {
         clickable: true,
     },
 });
+
+new Swiper('.mySwiper2',{
+    effect:'cube',
+    grabCursor: true,
+    cubeEffect: {
+        shadow: true,
+        slideShadows:true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+    },
+    pagination: {
+        el:'swiper-pagination'
+    },
+});
