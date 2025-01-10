@@ -7,12 +7,13 @@ const swiper = new Swiper(".mySwiper", {
             translate: [0, 0, -400],
         },
         next: {
+            shadow: true,
             translate: ["100%", 0, 0],
         },
     },
 });
 const swiper2 = new Swiper(".mySwiper2", {
-    graCursor: true,
+    grabCursor: true,
     effect: "creative",
     creativeEffect: {
         prev: {
@@ -34,6 +35,7 @@ const swiper3 = new Swiper(".mySwiper3", {
             translate: ["-20%", 0, -1],
         },
         next: {
+            shadow: true,
             translate: ["100%", 0, 0],
         },
     },
@@ -44,7 +46,7 @@ const swiper4 = new Swiper(".mySwiper4", {
     creativeEffect: {
         prev: {
             shadow: true,
-            translate: [0, 0, -800],
+            translate: [0, 0, -400],
             rotate: [180, 0, 0],
         },
         next: {
@@ -55,7 +57,7 @@ const swiper4 = new Swiper(".mySwiper4", {
     },
 });
 const swiper5 = new Swiper(".mySwiper5", {
-    graCursor: true,
+    grabCursor: true,
     effect: "creative",
     creativeEffect: {
         prev: {
@@ -78,9 +80,9 @@ const swiper6 = new Swiper(".mySwiper6", {
             shadow: true,
             origin: "left center",
             translate: ["-5%", 0, -200],
-            rotate: [0, 100, 0],
         },
         next: {
+            shadow: true,
             origin: "right center",
             translate: ["5%", 0, -200],
             rotate: [0, -100, 0],
