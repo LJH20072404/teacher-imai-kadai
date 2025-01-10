@@ -7,7 +7,7 @@ backBtn.addEventListener('click', () => {
     });
 });
 
-window.addEventListener('scroll', () =>{
+window.addEventListener('scroll', () => {
 
     if (window.scrollY >= 300){
         backBtn.style.display = 'inline';
