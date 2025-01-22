@@ -1,0 +1,62 @@
+body {
+    width: auto;
+    margin: 0 auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+h1 {
+    margin: 20px;
+}
+
+.nav-pc {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.nav-pc ul {
+    display: flex;
+    padding-left: 0;
+}
+.nav-pc li {
+    list-style: none;
+}
+.nav-pc a {
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+}
+.nav-pc a:hover {
+    text-decoration: underline;
+}
+
+main {
+    position: absolute;
+    top: 100px;
+    width: 800px;
+    height: 800px;
+}
+
+
+.main-message {
+    position: relative;
+    width: auto;
+    height: 400px;
+    background-image: url(image/FA_cc_codemosh_nobadge.jpg);
+    background-size: cover;
+    border-radius: 400px 0 400px 0;
+}
+.flexbox-item {
+    position: relative;
+    top: 300px;
+    left: 300px;
+    font-size: 20px;
+}
